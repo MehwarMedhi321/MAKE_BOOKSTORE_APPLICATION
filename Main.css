@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+}
+#adding P{
+display: flex;
+}
+
+.container{
+   min-height: 70vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding:20px;
+   padding-bottom: 60px;
+}
+
+.container .content{
+   text-align: center;
+}
+
+.container .content h3{
+   font-size: 30px;
+   color:#ffffff;
+}
+
+.container .content h3 span{
+   background:  crimson;
+   color:#000000;
+   border-radius: 5px;
+   padding:0 15px;
+}
+
+.container .content h1{
+   font-size: 50px;
+   color:#ffffff;
+}
+
+.container .content h1 span{
+   color:  crimson;
+}
+
+.container .content p{
+   font-size: 25px;
+   margin-bottom: 20px;
+}
+
+.container .content .btn{
+   display: inline-block;
+   padding:10px 30px;
+   font-size: 20px;
+   background: crimson;
+   color:#fff;
+   margin:0 5px;
+   text-transform: capitalize;
+   display: inline-block;
+   padding: 10px 20px;
+   font-size: 16px;
+   font-weight: bold;
+   text-align: center;
+   margin: 1%;
+   text-decoration: none;
+   cursor: pointer;
+   border: 2px solid  crimson;
+   background: linear-gradient(to left  crimson,   rgb(170, 46, 71));
+   color: #000000;
+   border-radius: 5px;
+   transition: background-color 0.1s ease-in-out, color 1s ease-in-out;
+   animation: zoominout 3s infinite alternate;
+   &:hover {
+    background-color: #fff;
+    color:   crimson;
+}
+
+}
+
+@keyframes zoominout{
+0%{
+    opacity: 0;
+    transform: translateY(-70%);
+}
+100%{
+    opacity: 1;
+    transform: translateY(-30%);
+}
+}
+
+
+.container .content .btn:hover{
+   background: crimson;
+}
+
+.form-container{
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding:20px;
+   padding-bottom: 60px;
+   background: #eee;
+}
+
+.form-container form{
+   padding:20px;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0,0,0,.1);
+   background: #fff;
+   text-align: center;
+   width: 500px;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./beach\ .gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./b19.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background: rgb(0, 0, 0);
+    color: rgb(208, 161, 161);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.logo {
+    width: 25%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 3rem;
+    i{
+        font-size: 20px;
+        padding-right: 8%;
+    }
+
+}
+
+
+.new {
+    width: 40%;
+    font-size: 1.3rem;
+    padding-right: 6%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    width: 30%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+
+    &:hover{
+        color:  crimson;
+    }
+}
+
+.container{
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+   
+  
+
+    h2{
+        font-size: 5rem;
+        text-align: center;
+       justify-content: center;
+       align-items: center;
+       padding-top: 10%;
+       color: white;
+        padding-bottom: 1%;
+    }
+
+}
+.row{
+    text-align: center;
+    margin-top: 4%;
+    align-items: center;
+  justify-content: center;
+}
+button{
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        justify-content: center;
+        margin-left: 19px;
+        background: crimson;
+        margin: 1%;
+        text-decoration: none;
+        cursor: pointer;
+        border: 2px solid  crimson;
+        background: linear-gradient(to left  crimson,rgb(156, 51, 72) );
+        color: #000000;
+        border-radius: 5px;
+        transition: background-color 8s ease-in-out, color 2s ease-in-out;
+        animation: zoominout 3s infinite alternate;
+    &:hover {
+        background-color: crimson;
+        color: crimson;
+    }
+
+}
+
+@keyframes zoominout{
+    0%{
+        opacity: 0;
+        transform: translateY(-70%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-30%);
+    }
+}
+.form-container form h3{
+   font-size: 30px;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+   color:#070707;
+}
+
+.form-container form input,
+.form-container form select{
+   width: 96%;
+   padding:10px 125px;
+   font-size: 17px;
+   margin:8px 0;
+   background: #eee;
+   border-radius: 5px;
+}
+
+.form-container form select option{
+   background: #fff;
+}
+
+.form-container form .form-btn{
+   background: #fbd0d9;
+   color:crimson;
+   text-transform: capitalize;
+   font-size: 20px;
+   cursor: pointer;
+   display: inline-block;
+   padding: 10px 20px;
+   font-size: 16px;
+   font-weight: bold;
+   text-align: center;
+   justify-content: center;
+   margin-left: 19px;
+   background: crimson;
+   margin: 1%;
+   text-decoration: none;
+   cursor: pointer;
+   border: 2px solid  crimson;
+   background: linear-gradient(to left  crimson,rgb(156, 51, 72) );
+   color: #ffffff;
+   border-radius: 5px;
+   transition: background-color 8s ease-in-out, color 2s ease-in-out;
+   animation: zooms 3s infinite alternate;
+&:hover {
+   background-color: rgb(134, 67, 80);
+   color: rgb(139, 65, 80);
+   text-decoration: underline;
+}
+
+}
+
+@keyframes zooms{
+0%{
+   opacity: 0;
+   transform: translateY(-70%);
+}
+100%{
+   opacity: 1;
+   transform: translateY(-30%);
+}
+}
+
+.form-container form .form-btn:hover{
+   background: crimson;
+   color:#fff;
+}
+
+.form-container form p{
+   margin-top: 10px;
+   font-size: 20px;
+   color:#ffffff;
+}
+
+.form-container form p a{
+   color:crimson;
+
+}
+.form-container form .error-msg{
+   margin:10px 0;
+   display: block;
+   background: crimson;
+   color:#fff;
+   border-radius: 5px;
+   font-size: 20px;
+   padding:10px;
+}
